@@ -342,6 +342,9 @@ transition: trasform 0.4s ease-out;
   text-align: center; 
   padding-top: 15px; 
 }
+.footer-left{
+  color: #670626;
+}
 
 .footer-icona {
   width: 40px; 
