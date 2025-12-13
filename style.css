@@ -1,0 +1,485 @@
+/* Stile per abilitare lo scorrimento morbido in tutta la pagina */
+html {
+  scroll-behavior: smooth;
+}
+
+/*  PALETTE & FONT BASE  */
+:root {
+  --pink: #ffbdc5;        
+  --pale-claret: #670626; 
+  --text: #000;
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  color: var(--text);
+  background-color: #fff;
+}
+
+/* ============================== */
+/*  PRIMA FASCIA (TOPBAR)         */
+/* ============================== */
+.topbar {
+  background-color: #670626;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.sc-text {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffbdc5;
+}
+
+.topbar-nav a {
+  text-decoration: none;
+  color: #ffbdc5;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 20px;
+  padding: 8px 10px;
+  background-color: 0.3s ease;
+  color: 0.3 ease;
+  border-radius: 0.3s ease;
+  transition: opacity 0.2s ease;
+}
+
+.topbar-nav a:hover {
+  background-color: #ffbdc5;
+  color: #670626;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* ============================== */
+/*  SECONDA FASCIA  */
+/* ============================== */
+.hero {
+  background-color: #670626;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.hero-content{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffbdc5;
+  text-align: center;
+  margin: 0;
+}
+
+.hero-name {
+  color: #ffbdc5;
+  font-size: 20px;
+  position: absolute;
+  bottom: 70px;
+  left: 40px;
+  width: auto;
+  margin: 0;
+  padding-bottom: 100px;
+}
+/* --- Terza fascia --- */
+.about {
+  background-color: #ffbdc5;
+  color: #670626;
+  padding: 60px 0;
+  width: 100%;
+}
+
+.about-title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about img {
+width: 553px;
+height: 380px;
+object-fit: cover;
+border-radius: 40px;
+border: 2px solid #670626;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+transition: trasform 0.4s ease-out;
+}
+
+.about img:hover{
+  transform: scale(1.05);
+}
+
+/* ===== FASCIA 4 ===== */
+.section-location {
+  background-color: #670626;
+  color: #ffbdc5;
+  align-items: center;
+}
+
+.section-location .col-md-4 {
+  text-align: left;
+}
+
+.section-location h5 {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.section-location p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.img-box {
+  width: 100%;
+  height: 314px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 40px;
+  border: 2px solid #ffbdc5;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.img-box:hover{
+  transform: scale(1.05);
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: trasform 0.4s ease-out;
+
+}
+
+/* ===== FASCIA 5 ===== */
+.section-university {
+  position: relative;
+  background-color: #ffbdc5;  
+}
+
+.section-university img {
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+  display: block;
+
+}
+
+.university-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffbdc5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+.university-overlay p{
+  max-width: 700px;
+  font-size: 22px !important;
+  line-height: 1.4;
+  padding: 0 20px;
+  margin: 0;
+}
+
+/* --- FASCIA 6--- */
+.fascia-header {
+    background-color: #ffbdc5; 
+    padding: 60px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.title-col {
+    flex: 1;
+}
+
+.title-col h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #670626;
+}
+
+.image-col {
+    flex: 1;
+}
+
+.image-col img {
+    width: 100%;
+    height: 400px;
+    border-radius: 40px;
+    object-fit: cover;
+    border: 2px solid #670626;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    transition: trasform 0.4s ease-out;
+}
+
+.image-col img:hover{
+  transform: scale(1.05);
+}
+/* --- FASCIA 7--- */
+.fascia-progetti {
+    background-color: #670626; 
+    padding: 50px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-content: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    border: 2px solid #ffbdc5;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    transition: trasform 0.4s ease-out;
+}
+
+.card-img:hover{
+  transform: scale(1.05);
+}
+
+.card-img img {
+    width: 325px;        
+    height: 240px;      
+    object-fit: cover;  
+    display: block;     
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #ffbdc5;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: #ffbdc5;
+}
+
+/* --- FASCIA 8--- */
+.fascia-footer {
+    background-color: #ffbdc5;
+    padding: 40px 0;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+}
+
+.footer-left p {
+    margin-bottom: 5px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #670626;
+    transition: color 0.3s;
+    display: inline-block; 
+    margin: 0 20px;
+     text-align: center;
+}
+
+.footer-right {
+  text-align: center; 
+  padding-top: 15px; 
+}
+
+.footer-icona {
+  width: 40px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto 5px auto; 
+}
+
+.footer-right a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* ================================================== */
+/* MEDIA QUERIES (Smartphone e Tablet: max-width 768px) */
+/* ================================================== */
+@media (max-width: 768px) {
+
+  .topbar{
+    height: auto;
+    padding: 15px 15px 10px 15px; /* Padding laterale */
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+  }
+  
+  .topbar-nav {
+    display: block; 
+    text-align: right;
+    width: 100%;
+  }
+
+.topbar-nav a {
+  text-decoration: none;
+  color: #ffbdc5;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 20px;
+  display: inline-block; 
+  padding: 8px 15px; 
+  border-radius: 20px; 
+  transition: 
+  background-color 0.3s ease, 
+  color 0.3s ease, 
+  border-radius 0.3s ease; 
+}
+
+.topbar-nav a:hover {
+  background-color: #ffbdc5; 
+  color: #670626; 
+  text-decoration: none; 
+}
+
+  .sc-text {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-content {
+    height: 350px;
+  }
+  
+  .hero-title {
+    font-size: 55px; 
+  }
+  
+  .hero-name {
+    position: static; 
+    text-align: center; 
+    padding-bottom: 0;
+    margin-top: 15px;
+  }
+  
+  .about {
+    padding: 30px 0;
+  }
+  
+  .about img {
+    width: 100%;
+    height: 320px;
+    margin-bottom: 20px !important; 
+    object-fit: cover;
+  }
+  
+  /* --- FASCIA 6 (PROGETTI UNIVERSITARI Header) --- */
+  .header-content {
+    flex-direction: column; 
+    text-align: center;
+    gap: 20px;
+  }
+
+  .title-col h1 {
+    font-size: 30px;
+  }
+
+  .image-col img {
+    height: 300px; 
+    width: 100%;
+    object-fit: cover;
+    flex-direction: column;
+  }
+  
+@media (max-width: 768px) {
+
+
+  /* --- FASCIA 7 (GRIGLIA PROGETTI) --- */
+  .grid-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .card-img img {
+    width: 100%;
+    height: 360px;
+  }
+
+}
+
+  /* --- FASCIA 8 (FOOTER) --- */
+  .footer-content {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+  }
+  
+  .footer-left {
+    order: 2; 
+    margin-top: 15px;
+  }
+  
+  .footer-right {
+    order: 1; 
+    gap: 40px; 
+    padding-top: 0;
+  }
+}
+
+
+
